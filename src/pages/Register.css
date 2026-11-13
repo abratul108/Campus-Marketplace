@@ -1,0 +1,173 @@
+.register-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 520px;
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.register-header h1 {
+  margin: 0;
+  color: #172033;
+  font-size: 30px;
+}
+
+.register-header p {
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+.register-form-group {
+  margin-bottom: 20px;
+}
+
+.register-form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.register-form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #d5dbe5;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.register-form-group input:focus {
+  border-color: #2563eb;
+}
+
+.register-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.password-rules {
+  background: #f8fafc;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-top: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.password-rules p {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.password-rules .valid {
+  color: #16a34a;
+}
+
+.password-rules .invalid {
+  color: #dc2626;
+}
+
+.role-section {
+  margin-bottom: 20px;
+}
+
+.role-title {
+  display: block;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.role-options {
+  display: flex;
+  gap: 25px;
+}
+
+.role-option {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  color: #374151;
+}
+
+.role-option input {
+  cursor: pointer;
+}
+
+.register-error {
+  color: #dc2626;
+  background: #fef2f2;
+  padding: 11px;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.register-success {
+  color: #15803d;
+  background: #f0fdf4;
+  padding: 11px;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.register-button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #1d4ed8;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.register-button:hover {
+  background: #1e40af;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 24px;
+  color: #6b7280;
+}
+
+.login-link button {
+  border: none;
+  background: none;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  .register-card {
+    padding: 28px 20px;
+  }
+
+  .register-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
